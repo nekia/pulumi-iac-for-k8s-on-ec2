@@ -1,0 +1,4 @@
+export PUBLIC_KEY_NAME="pulumi-key-20210908"
+export PUBLIC_KEY_STR="ssh-rsa AAA..............FhEFN"
+export GITHUB_USER="nekia"
+export GITHUB_TOKEN="ghp_kI..............k5"
