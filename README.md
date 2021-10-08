@@ -1,28 +1,28 @@
 # How to bring up a cluster
 
 * Fork the following repositories on Github:
-  * https://github.com/yokoyama610/fleet-infra
-  * https://github.com/yokoyama610/my-cicd-env
-  * https://github.com/yokoyama610/my-app-env
-  * https://github.com/yokoyama610/airtng-node
+  * https://github.com/nekia/fleet-infra
+  * https://github.com/nekia/my-cicd-env
+  * https://github.com/nekia/my-app-env
+  * https://github.com/nekia/airtng-node
 
 * In `my-app-env` repository, also need to update some repository URLs to your repository URLs in some manifest files
 
   ```
   my-app-env/myapps.yaml
-    11,33:     repoURL: https://github.com/yokoyama610/my-app-env.git
+    11,33:     repoURL: https://github.com/nekia/my-app-env.git
 
   my-app-env/argocd-apps/app.yaml
-    13,33:     repoURL: https://github.com/yokoyama610/my-app-env.git
+    13,33:     repoURL: https://github.com/nekia/my-app-env.git
 
   my-app-env/argocd-apps/backend.yaml
-    13,33:     repoURL: https://github.com/yokoyama610/my-app-env.git
+    13,33:     repoURL: https://github.com/nekia/my-app-env.git
 
   my-app-env/argocd-apps/messaging.yaml
-    13,33:     repoURL: https://github.com/yokoyama610/my-app-env.git
+    13,33:     repoURL: https://github.com/nekia/my-app-env.git
 
   my-app-env/myapps/app/app-deploy.yaml
-    22,16:       - image: yokoyama610/my-airtng-node:1.0.0
+    22,16:       - image: nekia/my-airtng-node:1.0.0
   ```
 
 * Set the following environment variables in `envsetup.rc`:
